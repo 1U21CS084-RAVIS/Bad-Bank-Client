@@ -1,0 +1,56 @@
+         
+
+         Full Stack
+
+create new folder => folder name as Bad-bank
+
+npm i express=>node module,package json
+
+npm i cors=>
+
+
+whats is node ?
+
+run time environment
+
+whats is frame work?
+
+what is express?
+  express is a freame work
+
+what is library?
+
+   collection of function 
+
+
+     index.js
+
+    server code 
+
+var express=require('express');
+var mongoose=require('mongoose');
+var app=express();
+var cors=require('cors');
+app.use(cors());
+app.use(express.json());
+
+//create a root path
+app.get('/',(req,res)=>{res.send("welcome")})
+
+//open the port
+app.listen(8080,()=>{console.log("Server Connected")});
+
+//connect 
+mongoose.connect('mongodb+srv://raviak213:ravi@cluster0.p0ux2.mongodb.net/bank').then(()=>{console.log("DataBase Connected")});
+
+
+//open the mongoDb atlas
+ 
+database id link;
+
+mongodb+srv://raviak213:<db_password>@cluster0.p0ux2.mongodb.net/
+
+
+
+
+
